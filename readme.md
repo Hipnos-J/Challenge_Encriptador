@@ -1,7 +1,7 @@
 
-# Encriptador de Texto
+![Logo](./img/Logo.png) 
 
-![Logo](./img/Logo.png)
+# Encriptador de Texto
 
 Challenge 1 Oracle - Alura
 
