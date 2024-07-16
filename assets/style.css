@@ -163,12 +163,12 @@ textarea::placeholder {
     justify-content: space-between;
 }
 
-.munheco {
+.muneco {
     min-width: 230px;
     width: 50%;
 }
 
-.munheco::placeholder {
+.muneco::placeholder {
 	font-weight: bolder;
 }
 
@@ -213,7 +213,7 @@ footer {
     align-items: center;
 }
 
-.creador {
+.usuario {
     font-size: 18px;
 }
 
@@ -246,7 +246,7 @@ footer {
         height: 100%;
     }
 
-    .munheco {
+    .muneco {
         display: none;
     }
 

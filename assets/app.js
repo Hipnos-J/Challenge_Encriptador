@@ -3,7 +3,7 @@ const desencriptar = document.getElementById("button__desencriptar");
 const copy = document.getElementById("button__copiar");
 const textoInicial = document.getElementById("textoInput");
 const textFinal = document.getElementById("textoFinal");
-const munheco = document.getElementById("munheco");
+const muneco = document.getElementById("muneco");
 const textInfo = document.getElementById("textoInfo");
 const rigth = document.getElementById("rigth")
 	
@@ -14,7 +14,7 @@ const remplace = (newvalue) => {
 	textoInicial.value = "";
 	textoInicial.style.height = "auto"
 	textoInicial.placeholder = "Ingrese el texto aquí";
-	munheco.classList.add("ocultar");
+	muneco.classList.add("ocultar");
 	textInfo.classList.add("ocultar");
 	copy.classList.remove("bn_ocultar");
 }
@@ -25,7 +25,7 @@ const reset = () => {
 	textFinal.innerHTML = "";
 	rigth.classList.remove("ajuste")
 	textFinal.classList.remove("ajustar");
-	munheco.classList.remove("ocultar");
+	muneco.classList.remove("ocultar");
 	textFinal.placeholder = "Ningún mensaje fue encontrado";
 	textInfo.classList.remove("ocultar")
 	copy.classList.add("bn_ocultar");
@@ -40,6 +40,7 @@ let remplazar = [
 	["u", "ufat"]
 ];
 
+//validacion
 function validarMinuscula(event) {
 	const tecla = event.key;
 	const esMinuscula = /[a-z]/.test(tecla);
@@ -106,7 +107,8 @@ copy.addEventListener("click", () => {
 		icon: "success"});
 	reset();
 });
-//auto ajuste de textarea
+
+//auto ajuste 
 textoInicial.addEventListener("change", e => {
 	textoInicial.style.height = "auto";
 	let scHeight = e.target.scrollHeight;
