@@ -11,7 +11,7 @@ Challenge 1 Oracle - Alura
 
 ## Autor
 
-- Hipnos J
+- Hipnos-J
 
 
 
